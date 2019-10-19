@@ -8,7 +8,7 @@ yum install httpd -y
 service httpd start
 chkconfig httpd on
 cd /var/www/html
-git clone https://github.com/vCloudmateguru/ion.git
+git clone https://github.com/andydevop/fusion.git
 
 
 #AMI Used is Ubuntu Linux
@@ -21,6 +21,6 @@ apt-get install apache2 -y
 service apache2 start
 chkconfig apache2 on
 cd /var/www/html
-git clone https://github.com/vCloudmateguru/ion.git
+git clone https://github.com/andydevop/fusion.git
 
 Credits: Taken from github.com/vCloudmateguru
