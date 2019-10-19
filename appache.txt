@@ -10,6 +10,17 @@ chkconfig httpd on
 cd /var/www/html
 git clone https://github.com/andydevop/fusion.git
 
+#AMI Used is Amazon Linux (Echo Welcome Message)
+
+#!/bin/bash
+sudo su
+cd
+yum update -y
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+echo "Welcome to Region = Ohio, AZ = 2a" >> /var/www/html/index.html
+
 
 #AMI Used is Ubuntu Linux
 
